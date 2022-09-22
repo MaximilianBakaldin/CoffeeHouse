@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lora;
+}
+
+html, body{
+  background-color: #f8f3df;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Style for mobile */
+
+/* Navigation bar */
+nav {
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 4.5rem;
+  position: fixed;
+  z-index: 3;
+}
+
+.nav-bar-logo a {
+  text-decoration: none;
+  color: #f8f3df;
+}
+
+.nav-bar-logo {
+  letter-spacing: .5rem;
+  font-family: Lora;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: .9rem;
+}
+
+ul a:hover{
+  background-color: #f8f3df;
+  color: #0b0500;
+}
+
+ul a {
+  color: #f8f3df;
+  text-decoration: none;
+  padding: .25rem .5rem;
+  border-radius: 1rem;
+}
+
+/* Hero section */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0 , 0, 0.9), rgba(0, 0, 0, 0.1)), url("img/coffee-premium.jpeg");
+  background-color: #533824;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+h1{
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  letter-spacing: .25rem;
+  font-weight: 100;
+  color: #f8f3df;
+}
+
+h2{
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  letter-spacing: .15rem;
+  font-weight: 100;
+  color: #f8f3df;
+}
+
+.hero-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* margin-left: 36%; */
+  left: 50%;
+  -ms-transform: translate(-50%, -50%); /* Copied from the web to center button on x and y axis */
+  transform: translate(-50%, -50%);     /* Copied from the web to center button on x and y axis */
+  position: absolute;
+  top: 85%;
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  color: #f8f3df;
+  border-radius: 1rem;
+  border: transparent;
+  background: transparent;
+}
+
+.hero-btn:hover{
+  cursor: pointer;
+}
+/* Code above validated */
+
+/* Main section */
+.pic1 {
+  background-image: url(img/coffee-cake.jpeg);
+  width: 100%;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2rem;
+}
+
+.pic2{
+  background-image: url(img/coffee-shop-machines.jpeg);
+  width: 100%;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #efead6;
+}
+
+.text2{
+  background-color: #efead6;
+}
+
+.pic3{
+  background-image: url(img/coffee-barista.jpeg);
+  width: 100%;
+  height: 50vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text1, .text2, .text3, .text4{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 1rem 2rem 2rem;
+  font-weight: 100;
+}
+
+.pic4{
+  background-image: url(img/coffee-roast.jpeg);
+  width: 100%;
+  height: 55vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #efead6;
+}
+
+
+.text4{
+  background-color: #efead6;
+}
+
+.here{
+  color: #0b0500;
+  padding: .25rem;
+  border-radius: .5rem;
+}
+
+.text4 a:hover{
+  background-color: #f8f3df;
+  color: #0b0500;
+}
+
+.bold{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0rem 1rem 0;
+}
+
+/* About and contact section */
+.about{
+  background-color: #ffefd6;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact{
+  background-color: #ffefd6;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 15%;
+  padding-top: 15%;
+  text-align: center;
+  border-top: solid 1px #c1beb4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.con-txt{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.first-name, .last-name, .email, .tel, .text-area{
+  margin: .5rem;
+  padding-left: .25rem;
+  border-radius: .5rem;
+  border-style: solid;
+  border-color: #c1beb4;
+  box-shadow: 0 0 5px 0;
+}
+
+.form-btn{
+  color: black;
+  background-color: #ffffff;
+  border: solid #c1beb4;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: .5rem;
+  box-shadow: 0 0 5px 0;
+}
+
+.form-btn:hover{
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+/* footer section */
+footer{
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/coffee_shop_logo.png);
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 4rem;
+  background-color: #ffffff;
+  padding: 20rem 7rem 2rem;
+  line-height: 1.5rem;
+}
+
+footer h5{
+  font-size: 1rem;
+  padding: 2rem 0rem 1rem 0;
+}
+
+h5 .social{
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+footer ul a{
+  color: black;
+  text-decoration: underline;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer ul{
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    font-size: 1rem;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+
+.media{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+.media a{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Style for tablet */
+@media only screen and (min-width: 480px) and (max-width: 960px){
+  .nav-bar-logo{
+    font-size: 2rem;
+    letter-spacing: .8rem;
+    padding-bottom: .4rem;
+  }
+
+  nav {
+    height: 5rem;
+  }
+
+  .nav-bar ul{
+    font-size: 1.3rem;
+  }
+
+  .text1, .text2, .text3, .text4{
+    padding: 1.5rem 6rem 3rem 6rem;
+  }
+
+  .bold{
+    padding: 3rem 0rem 2rem 0;
+    margin-top: 5rem;
+  }
+
+  .pic1 {
+    height: 60vh;
+    margin-top: 2rem;
+  }
+
+  .pic2{
+    height: 60vh;
+  }
+
+  .pic3{
+    height: 60vh;
+  }
+
+  .pic4{
+    height: 55vh;
+  }
+
+  .about{
+    background-color: #ffefd6;
+    padding: 3rem 7rem 4rem 7rem;
+    text-align: center;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer{
+    display: block;
+  }
+
+  .footer-col{
+    text-align: center;
+  }
+
+  .social{
+    display: flex;
+    justify-content: center;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  .media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+  }
+
+  footer ul{
+    list-style: none;
+    padding-bottom: 3rem;
+  }
+
+  .first-name, .last-name, .email, .tel, .text-area{
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: .25rem 0 .25rem 0;
+  }
+
+ .form-btn{
+    margin: 5% 40% 0 40%;
+    align-items: center;
+  }
+
+}
+
+/* Style for desktop */
+@media screen and (min-width: 960px){
+  .nav-bar-logo{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "pic1 text1"
+    "text2 pic2"
+    "pic3 text3"
+    "text4 pic4";
+  }
+
+  .pic1{
+    grid-area: pic1;
+    height: 40rem;
+  }
+
+  .text1{
+    grid-area: text1;
+    padding: 13rem 8rem 0 4rem;
+    height: 40rem;
+  }
+
+  .text2{
+    grid-area: text2;
+    padding: 13rem 4rem 0 8rem;
+    height: 40rem;
+  }
+
+  .pic2{
+    grid-area: pic2;
+    height: 40rem;
+  }
+
+  .pic3{
+    grid-area: pic3;
+    height: 40rem;
+  }
+
+  .text3{
+    grid-area: text3;
+    padding: 13rem 8rem 0 4rem;
+    height: 40rem;
+  }
+
+  .text4{
+    grid-area: text4;
+    padding: 12rem 4rem 0 8rem;
+    height: 42rem;
+  }
+
+  .pic4{
+    grid-area: pic4;
+    height: 42rem;
+  }
+
+  .bold{
+    font-size: 3rem;
+  }
+
+  .about{
+    background-color: #ffefd6;
+    padding: 5rem 7rem;
+    text-align: center;
+  }
+
+  .contact{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .first-name, .last-name, .email, .tel, .text-area{
+    display: flex;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: .25rem 0 .25rem 0;
+  }
+
+  .form-btn{
+    margin: 5% 45% 0 45%;
+
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 3rem;
+    grid-template-areas:none;
+  }
+
+  .social-media{
+    grid-area: 2 / -3;
+    width: 100vh;
+  }
+
+}
